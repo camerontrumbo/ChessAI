@@ -1,15 +1,11 @@
-package com.chess.ChessApp.service.pieces;
+package com.chess.ChessApp.service.moves;
 
 import com.chess.ChessApp.dto.Coordinates;
 import com.chess.ChessApp.model.ChessBoard;
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ObjectUtils;
 
 @Service
 public class PawnService {
-
     public ChessBoard getPossibleMoves(int board[][], Coordinates coordinates) {
         canMoveForward(board, coordinates);
         canTake(board, coordinates);
