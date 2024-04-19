@@ -21,6 +21,8 @@ public class PawnService {
             if (board[coordinates.getX() - 1][coordinates.getY()] == 0 && board[coordinates.getX() - 2][coordinates.getY()] == 0) {
                 board[coordinates.getX() - 1][coordinates.getY()] += 15;
                 board[coordinates.getX() - 2][coordinates.getY()] += 15;
+            } else if (board[coordinates.getX() - 1][coordinates.getY()] == 0) {
+                board[coordinates.getX() - 1][coordinates.getY()] += 15;
             }
         } else {
             //If the pawn has moved
